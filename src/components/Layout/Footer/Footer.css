@@ -1,0 +1,80 @@
+@media (min-width: 1024px) {
+  .cdp-default-links {
+    width: 15% !important;
+  }
+
+  .cdp-chamber-logos {
+    width: 85% !important;
+  }
+
+  #cdp-chamber-logo-heading {
+    font-variant: small-caps;
+    text-align: center;
+    font-size: x-large;
+  }
+
+  .chamber-logos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .break {
+    flex-basis: 100%;
+    height: 2rem !important;
+  }
+
+  .chamber-logos > li:nth-child(-n+3) {
+    height: 8rem;
+  }
+
+  .chamber-logos > li {
+    height: 4rem;
+  }
+
+  .chamber-logos > * > img {
+    max-height: 100%;
+  }
+
+}
+
+@media (min-width: 360px) and (max-width: 1023px) {
+  #cdp-chamber-logo-heading {
+    font-variant: small-caps;
+    text-align: center;
+    font-size: medium;
+  }
+
+  .chamber-logos {
+    display: flex;
+    gap: 2vh;
+    flex-flow: row wrap;
+  }
+
+  .chamber-logos > li {
+    flex-basis: 100%;
+    margin: 0 auto;
+  }
+
+  .chamber-logos > li:nth-child(-n+3) {
+    height: 18vh;
+  }
+
+  .chamber-logos > li {
+    display: flex;
+    justify-content: center;
+    height: 9vh;
+  }
+
+  .chamber-logos > * > img {
+    max-height: 100%;
+  }
+
+  .break {
+    display: none !important;
+  }
+
+}
+
