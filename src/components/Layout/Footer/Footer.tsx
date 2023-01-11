@@ -62,8 +62,11 @@ const Footer: FC<FooterProps> = ({ footerLinksSections }: FooterProps) => {
                 <li>
                   <a href="https://councildataproject.github.io/">CouncilDataProject</a>
                 </li>
-                <li>
+                <li style={{marginLeft:'1em'}}>
                   <a href="https://github.com/CouncilDataProject">GitHub</a>
+                </li>
+                <li>
+                  <a href="//openmontana.org" target="_blank" rel="noreferrer">Open Montana</a>
                 </li>
               </ul>
             </section>
