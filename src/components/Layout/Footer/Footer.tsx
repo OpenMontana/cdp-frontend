@@ -5,7 +5,7 @@ import gfchamber from "../../../assets/images/logos/GFChamber.png";
 import helenachamber from "../../../assets/images/logos/HelenaChamber.png";
 import kalispellchamber from "../../../assets/images/logos/KalispellChamber.png";
 import missoulachamber from "../../../assets/images/logos/MissoulaChamber.png";
-import montanachamber from "../../../assets/images/logos/MontanaChamber.png";
+import montanaChamberHorizontal from "../../../assets/images/logos/MTC-web-white-horizontal.png"
 import "./Footer.css";
 
 interface Link {
@@ -88,7 +88,7 @@ const Footer: FC<FooterProps> = ({ footerLinksSections }: FooterProps) => {
                   {/* this li is here to break the items into two discrete rows */}
                 </li>
                 <li>
-                  <img src={montanachamber} />
+                  <img src={montanaChamberHorizontal} />
                 </li>
                 <li>
                   <img src={kalispellchamber} />
