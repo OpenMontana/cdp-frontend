@@ -4,7 +4,7 @@
     "node": "16.x",
     "npm": "8.x"
   },
-  "version": "3.1.4",
+  "version": "3.1.5",
   "description": "Front-end tooling library for React components for CDP instance deployments. Fork of @councildataproject/cdp-frontend.",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
