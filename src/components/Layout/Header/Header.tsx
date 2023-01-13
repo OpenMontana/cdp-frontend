@@ -105,7 +105,7 @@ const Header: FC<HeaderProps> = ({ municipalityName }: HeaderProps) => {
                         {strings.events}
                       </Link>
                     </li>
-                    <li className="mzp-c-menu-category">
+                    {/* <li className="mzp-c-menu-category">
                       <Link
                         to="/people"
                         className="mzp-c-menu-title"
@@ -113,7 +113,7 @@ const Header: FC<HeaderProps> = ({ municipalityName }: HeaderProps) => {
                       >
                         {strings.people}
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </nav>
               </div>
