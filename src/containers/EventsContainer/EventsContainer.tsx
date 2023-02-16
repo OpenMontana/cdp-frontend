@@ -53,7 +53,7 @@ const EventsContainer: FC<EventsContainerProps> = ({
     textRepFunction: getDateText(language, municipality.timeZone),
   });
   const committeeFilter = useFilter<boolean>({
-    name: strings.committee,
+    name: "Bill Number",
     initialState: bodies.reduce((obj, body) => {
       obj[body.id as string] = initialSelectedBodies[body.id as string] || false;
       return obj;
