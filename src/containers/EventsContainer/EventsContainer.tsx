@@ -168,7 +168,7 @@ const EventsContainer: FC<EventsContainerProps> = ({
   return (
     <PageContainer>
       <SearchPageTitle>
-        <h1 className="mzp-u-title-sm">{strings.events}</h1>
+        <h1 className="mzp-u-title-sm">{municipality.name}</h1>
         <SearchBar
           placeholder={strings.search_topic_placeholder}
           query={searchQuery}
