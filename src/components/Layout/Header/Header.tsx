@@ -96,24 +96,6 @@ const Header: FC<HeaderProps> = ({ municipalityName }: HeaderProps) => {
                         {municipalityName}
                       </Link>
                     </li>
-                    <li className="mzp-c-menu-category">
-                      <Link
-                        to="/events"
-                        className="mzp-c-menu-title"
-                        style={currentUnderline(location, "/events")}
-                      >
-                        {strings.events}
-                      </Link>
-                    </li>
-                    {/* <li className="mzp-c-menu-category">
-                      <Link
-                        to="/people"
-                        className="mzp-c-menu-title"
-                        style={currentUnderline(location, "/people")}
-                      >
-                        {strings.people}
-                      </Link>
-                    </li> */}
                   </ul>
                 </nav>
               </div>
