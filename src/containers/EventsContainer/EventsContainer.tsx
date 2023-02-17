@@ -48,12 +48,14 @@ const EventsContainer: FC<EventsContainerProps> = ({
 
   const dateRangeFilter = useFilter<string>({
     name: strings.date,
+    selectedText: strings.date,
     initialState: { start: "", end: "" },
     defaultDataValue: "",
     textRepFunction: getDateText(language, municipality.timeZone),
   });
   const committeeFilter = useFilter<boolean>({
     name: "Bill Number",
+    selectedText: "Videos Selected",
     initialState: bodies.reduce((obj, body) => {
       obj[body.id as string] = initialSelectedBodies[body.id as string] || false;
       return obj;
@@ -64,6 +66,7 @@ const EventsContainer: FC<EventsContainerProps> = ({
   });
   const sortFilter = useFilter<string>({
     name: "Sort",
+    selectedText: "Sort",
     initialState: {
       by: "event_datetime",
       order: ORDER_DIRECTION.desc,

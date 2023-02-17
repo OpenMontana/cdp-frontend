@@ -37,16 +37,18 @@ export interface Filter<T> {
 
 export interface UseFilterArg<T> {
   name: string;
+  selectedText: string;
   initialState: FilterState<T>;
   defaultDataValue: T;
-  textRepFunction: (state: FilterState<T>, defaultText: string) => string;
+  textRepFunction: (state: FilterState<T>, defaultText: string, selectedText: string) => string;
   isRequired?: boolean;
   limit?: number;
 }
 /**Returns an object that encapsulates the filter's state with functions to update filter's state
  * and get other useful informations about the state. */
 function useFilter<T>(arg: UseFilterArg<T>): Filter<T> {
-  const { name, initialState, defaultDataValue, textRepFunction, isRequired, limit } = arg;
+  const { name, selectedText, initialState, defaultDataValue, textRepFunction, isRequired, limit } =
+    arg;
   const filterReducer = createFilterReducer<T>();
   const [state, dispatch] = useReducer(filterReducer, initialState);
   const [popupIsOpen, setPopupIsOpen] = useState(false);
@@ -71,7 +73,7 @@ function useFilter<T>(arg: UseFilterArg<T>): Filter<T> {
   };
 
   const getTextRep = (): string => {
-    return textRepFunction(state, name);
+    return textRepFunction(state, name, selectedText);
   };
 
   const isActive = (): boolean => {

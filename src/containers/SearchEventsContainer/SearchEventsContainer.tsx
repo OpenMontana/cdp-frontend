@@ -49,12 +49,14 @@ const SearchEventsContainer: FC<SearchEventsContainerData> = ({
 
   const dateRangeFilter = useFilter<string>({
     name: strings.date,
+    selectedText: strings.date,
     initialState: searchEventsState.dateRange,
     defaultDataValue: "",
     textRepFunction: getDateText(language, municipality.timeZone),
   });
   const committeeFilter = useFilter<boolean>({
     name: strings.committee,
+    selectedText: strings.committee,
     initialState: searchEventsState.committees,
     defaultDataValue: false,
     textRepFunction: getCheckboxText,
@@ -62,6 +64,7 @@ const SearchEventsContainer: FC<SearchEventsContainerData> = ({
   });
   const sortFilter = useFilter<string>({
     name: "Sort",
+    selectedText: "Sort",
     initialState: {
       by: "datetimeWeightedRelevance",
       order: ORDER_DIRECTION.desc,
