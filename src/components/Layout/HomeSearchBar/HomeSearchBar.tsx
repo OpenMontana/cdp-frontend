@@ -104,6 +104,7 @@ const HomeSearchBar: FC = () => {
   const history = useHistory<SearchEventsState>();
   const searchTypeFilter = useFilter<boolean>({
     name: "Search Type",
+    selectedText: "Search Type",
     initialState: intialSearchTyperFilterState,
     defaultDataValue: false,
     textRepFunction: getSearchTypeText,
