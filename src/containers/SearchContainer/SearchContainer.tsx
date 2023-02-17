@@ -33,6 +33,7 @@ const SearchContainer: FC<SearchContainerData> = ({ searchState }: SearchContain
   const [query, setQuery] = useState(searchState.query);
   const searchTypeFilter = useFilter<boolean>({
     name: "Search Type",
+    selectedText: "Search Type",
     initialState: searchState.searchTypes,
     defaultDataValue: false,
     textRepFunction: getSearchTypeText,

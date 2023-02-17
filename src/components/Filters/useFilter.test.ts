@@ -13,6 +13,7 @@ describe("useFilter", () => {
     const { result } = renderHook(() =>
       useFilter<boolean>({
         name: "test",
+        selectedText: "test",
         initialState: { a: true, b: true },
         defaultDataValue: false,
         textRepFunction: textRepFuncMock,
@@ -31,6 +32,7 @@ describe("useFilter", () => {
     const { result } = renderHook(() =>
       useFilter<boolean>({
         name: "test",
+        selectedText: "test",
         initialState: { a: true, b: true },
         defaultDataValue: false,
         textRepFunction: textRepFuncMock,
@@ -46,6 +48,7 @@ describe("useFilter", () => {
     const { result } = renderHook(() =>
       useFilter<boolean>({
         name: "test",
+        selectedText: "test",
         initialState: { a: false, b: false },
         defaultDataValue: false,
         textRepFunction: textRepFuncMock,
@@ -60,6 +63,7 @@ describe("useFilter", () => {
       const { result } = renderHook(() =>
         useFilter<boolean>({
           name: "test",
+          selectedText: "test",
           initialState: {},
           defaultDataValue: false,
           textRepFunction: textRepFuncMock,
@@ -72,6 +76,7 @@ describe("useFilter", () => {
       const { result } = renderHook(() =>
         useFilter<boolean>({
           name: "test",
+          selectedText: "test",
           initialState: { a: false, b: false },
           defaultDataValue: false,
           textRepFunction: textRepFuncMock,
@@ -84,6 +89,7 @@ describe("useFilter", () => {
       const { result } = renderHook(() =>
         useFilter<boolean>({
           name: "test",
+          selectedText: "test",
           initialState: { a: true, b: false },
           defaultDataValue: false,
           textRepFunction: textRepFuncMock,
@@ -100,6 +106,7 @@ describe("useFilter", () => {
       const { result } = renderHook(() =>
         useFilter<boolean>({
           name: "test",
+          selectedText: "test",
           initialState: newState,
           defaultDataValue: false,
           textRepFunction: textRepFuncMock,
@@ -114,6 +121,7 @@ describe("useFilter", () => {
       const { result } = renderHook(() =>
         useFilter<boolean>({
           name: "test",
+          selectedText: "test",
           initialState: newState,
           defaultDataValue: false,
           textRepFunction: textRepFuncMock,
@@ -128,6 +136,7 @@ describe("useFilter", () => {
       const { result } = renderHook(() =>
         useFilter<boolean>({
           name: "test",
+          selectedText: "test",
           initialState: newState,
           defaultDataValue: false,
           textRepFunction: textRepFuncMock,
@@ -142,6 +151,7 @@ describe("useFilter", () => {
       const { result } = renderHook(() =>
         useFilter<boolean>({
           name: "test",
+          selectedText: "test",
           initialState: newState,
           defaultDataValue: false,
           textRepFunction: textRepFuncMock,
@@ -156,6 +166,7 @@ describe("useFilter", () => {
       const { result } = renderHook(() =>
         useFilter<boolean>({
           name: "test",
+          selectedText: "test",
           initialState: newState,
           defaultDataValue: false,
           textRepFunction: textRepFuncMock,
@@ -170,6 +181,7 @@ describe("useFilter", () => {
       const { result } = renderHook(() =>
         useFilter<boolean>({
           name: "test",
+          selectedText: "test",
           initialState: newState,
           defaultDataValue: false,
           textRepFunction: textRepFuncMock,
